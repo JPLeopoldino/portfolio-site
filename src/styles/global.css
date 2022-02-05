@@ -16,13 +16,8 @@
     }
 }
 
-body {
-    background: #222;
-}
-
 body, input, textarea, button {
     font: 400 1rem 'Titillium Web', sans-serif;
-    color: #FFF;
 }
 
 h1 {
@@ -36,3 +31,10 @@ h2 {
 button {
     cursor: pointer;
 }
+
+/*
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #421cd9 #29c9a5;
+  }
+*/
