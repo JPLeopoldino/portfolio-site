@@ -1,15 +1,16 @@
 import * as SC from './styles';
+import colors from '../../styles/colors';
 
 export default function MainPage() {
     return(
         <SC.Container>
             <SC.Header/>
-            <SC.Section color="#FBF8F8">
+            <SC.Section color={colors.white}>
                 <SC.RowContainer>
                     <SC.ContentContainer align="flex-start">
                         <SC.Subtitle>Full Stack Developer</SC.Subtitle>
                         <SC.Title>My Full Name</SC.Title>
-                        <SC.Text color="#586A6A">
+                        <SC.Text color={colors.black}>
                             Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit.
                             Morbi non leo massa.
@@ -22,8 +23,8 @@ export default function MainPage() {
                 </SC.RowContainer>
             </SC.Section>
 
-            <SC.Section color="#586A6A">
-                <SC.SectionTitle color="#FBF8F8">
+            <SC.Section color={colors.black}>
+                <SC.SectionTitle color={colors.white}>
                     About
                 </SC.SectionTitle>
                 <SC.RowContainer>
@@ -37,10 +38,10 @@ export default function MainPage() {
                         </SC.RowContainer>
                     </SC.ContentContainer>
                     <SC.ContentContainer align="flex-start">
-                        <SC.TitleText color="#FBF8F8">
+                        <SC.TitleText color={colors.white}>
                             Subtitle
                         </SC.TitleText>
-                        <SC.Text color="#FBF8F8">
+                        <SC.Text color={colors.white}>
                             Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Morbi non leo massa.
                             Lorem ipsum dolor sit amet, consectetur
@@ -53,8 +54,8 @@ export default function MainPage() {
                 </SC.RowContainer>
             </SC.Section>
 
-            <SC.Section color="#FBF8F8">
-                <SC.SectionTitle color="#586A6A">
+            <SC.Section color={colors.white}>
+                <SC.SectionTitle color={colors.black}>
                     Projects
                 </SC.SectionTitle>
                 <SC.ScrollableRowContainer>
@@ -153,8 +154,8 @@ export default function MainPage() {
                 </SC.ScrollableRowContainer>
             </SC.Section>
             
-            <SC.Section color="#586A6A">
-                <SC.SectionTitle color="#FBF8F8">
+            <SC.Section color={colors.black}>
+                <SC.SectionTitle color={colors.white}>
                     Skills
                 </SC.SectionTitle>
                 <SC.RowSkillContainer>
@@ -202,12 +203,12 @@ export default function MainPage() {
                 </SC.RowSkillContainer>
             </SC.Section>
             
-            <SC.Section color="#FBF8F8">
-                <SC.SectionTitle color="#586A6A">
+            <SC.Section color={colors.white}>
+                <SC.SectionTitle color={colors.black}>
                     Contact
                 </SC.SectionTitle>
                 <SC.RowContactContainer>
-                    <SC.Text color="#586A6A">
+                    <SC.Text color={colors.black}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Morbi non leo massa. Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit.

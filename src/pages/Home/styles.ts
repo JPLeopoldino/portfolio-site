@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '../../styles/colors';
 
 interface SectionProps {
     color: string;
@@ -30,7 +31,7 @@ export const Header = styled.div`
     height: 90px;
     position: fixed;
     top: 0;
-    background-color: #586A6A;
+    background-color: ${colors.black};
     z-index: 99;
 `;
 
@@ -68,7 +69,7 @@ export const Title = styled.h1`
     line-height: 84px;
     letter-spacing: 0em;
     text-align: left;
-    color: #586A6A;
+    color: ${colors.black};
 `;
 
 export const Subtitle = styled.p`
@@ -78,7 +79,7 @@ export const Subtitle = styled.p`
     line-height: 32px;
     letter-spacing: 0.1em;
     text-align: left;
-    color: #586A6A;
+    color: ${colors.black};
 `;
 
 export const TitleText = styled.p<TextProps>`
@@ -109,9 +110,9 @@ export const Button = styled.button`
     line-height: 42px;
     letter-spacing: 0em;
     text-align: center;
-    color: #FFF;
+    color: ${colors.white};
 
-    background-color: #586A6A;
+    background-color: ${colors.black};
     border-radius: 18px;
     padding: 4px 34px;
     border: none;
@@ -131,8 +132,8 @@ export const Illustration = styled.span`
     letter-spacing: 0em;
     text-align: center;
 
-    background-color: #586A6A;
-    color: #FBF8F8;
+    background-color: ${colors.black};
+    color: ${colors.white};
     border-radius: 73px;
     padding: 180px 80px;
 `;
@@ -155,9 +156,9 @@ export const PictureFrame = styled.span`
     line-height: 42px;
     letter-spacing: 0em;
     text-align: center;
-    color: #586A6A;
+    color: ${colors.black};
 
-    background-color: #FBF8F8;
+    background-color: ${colors.white};
     border-radius: 100%;
     padding: 180px 180px;
 `;
@@ -169,12 +170,12 @@ export const NameLabel = styled.p`
     line-height: 42px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FBF8F8;
+    color: ${colors.white};
     margin: 20px 0;
 `;
 
 export const MidiaIcon = styled.span`
-    background-color: #FBF8F8;
+    background-color: ${colors.white};
     border-radius: 100%;
     padding: 25px 25px;
     margin: 0 15px;
@@ -190,7 +191,7 @@ export const ScrollableRowContainer = styled.div`
     gap: 100px;
     overflow-x: scroll;
     scrollbar-width: thin;
-    scrollbar-color: #586A6A rgba(186, 191, 191, 0.4);
+    scrollbar-color: ${colors.black} ${colors.grey};
 `;
 
 export const ProjectCard = styled.div`
@@ -213,7 +214,7 @@ export const ProjectCard = styled.div`
         top: 0;
         left: 0;
         border-radius: 18px;
-        background: #586A6A;
+        background: ${colors.black};
         z-index: 1;
     }
 
@@ -225,7 +226,7 @@ export const ProjectCard = styled.div`
         top: -20px;
         left: 5%;
         border-radius: 18px;
-        background: #BABFBF;
+        background: ${colors.grey};
         z-index: -1;
     }
 `;
@@ -234,7 +235,7 @@ export const ProjectImage = styled.div`
     min-height: 246px;
     width: 80%;
     border-radius: 19px;
-    background: #BABFBF;
+    background: ${colors.grey};
     z-index: 2;
 `;
 
@@ -255,7 +256,7 @@ export const ProjectTitle = styled.p`
     line-height: 32px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FBF8F8;
+    color: ${colors.white};
     z-index: 2;
 `;
 
@@ -266,7 +267,7 @@ export const ProjectDesc = styled.p`
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FBF8F8;
+    color: ${colors.white};
     z-index: 2;
 `;
 
@@ -283,7 +284,7 @@ export const ProjectToolsContainer = styled.div`
 
 export const ToolBagage = styled.p`
     border-radius: 18px;
-    border: 2px solid #BABFBF;
+    border: 2px solid ${colors.grey};
     padding: 1px 16px;
     font-size: 13px;
     font-style: normal;
@@ -291,7 +292,7 @@ export const ToolBagage = styled.p`
     line-height: 17px;
     letter-spacing: 0em;
     text-align: center;
-    color: #BABFBF;
+    color: ${colors.grey};
     z-index: 2;
 `;
 
@@ -299,7 +300,7 @@ export const ProjectButton = styled.button`
     width: 80%;
     margin: 10px 0 0;
     border-radius: 18px;
-    background-color: #BABFBF;
+    background-color: ${colors.grey};
     padding: 20px 64px;
     font-size: 28px;
     font-style: normal;
@@ -307,7 +308,7 @@ export const ProjectButton = styled.button`
     line-height: 37px;
     letter-spacing: 0em;
     text-align: center;
-    color: #586A6A;
+    color: ${colors.black};
     z-index: 2;
     border: none;
     outline: none;
@@ -334,18 +335,18 @@ export const SkillTitle = styled.p`
     line-height: 32px;
     letter-spacing: 0em;
     text-align: center;
-    color: #FBF8F8;
+    color: ${colors.white};
 `;
 
 export const SkillItem = styled.div`
-    background-color: #FBF8F8;
+    background-color: ${colors.white};
     border-radius: 100%;
     padding: 60px 60px;
     margin: 15px 0;
 `;
 
 export const SkillBar = styled.div<SkillBarProps>`
-    background: #788787;
+    background: ${colors.dark_grey};
     width: 120px;
     height: 15px;
     position: relative;
@@ -361,7 +362,7 @@ export const SkillBar = styled.div<SkillBarProps>`
         top: 0;
         left: 0;
         border-radius: 18px;
-        background: #FBF8F8;
+        background: ${colors.white};
         z-index: 1;
     }
 
@@ -373,13 +374,13 @@ export const SkillBar = styled.div<SkillBarProps>`
         top: 0;
         left: 0;
         border-radius: 18px;
-        background: #788787;
+        background: ${colors.dark_grey};
         z-index: -1;
     }
 `;
 
 export const ContactItem = styled.div`
-    background-color: #586A6A;
+    background-color: ${colors.black};
     border-radius: 100%;
     padding: 25px 25px;
     margin: 0 15px 0;
@@ -392,7 +393,7 @@ export const ContactText = styled.p`
     line-height: 42px;
     letter-spacing: 0em;
     text-align: left;
-    color: #586A6A;
+    color: ${colors.black};
 `;
 
 export const RowContactContainer = styled.div`
@@ -418,6 +419,6 @@ export const Footer = styled.div`
     line-height: 42px;
     letter-spacing: 0em;
     text-align: center;
-    color: #FBF8F8;
-    background: #586A6A;
+    color: ${colors.white};
+    background: ${colors.black};
 `;
