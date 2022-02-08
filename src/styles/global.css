@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 @media (max-width: 1080px) {
@@ -17,7 +18,8 @@
 }
 
 body, input, textarea, button {
-    font: 400 1rem 'Titillium Web', sans-serif;
+    /* font: 400 1rem 'Titillium Web', sans-serif; */
+    font-family: 'Gruppo', cursive;
 }
 
 h1 {
