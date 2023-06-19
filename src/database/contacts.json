@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "name": "Github",
+    "icon": "github",
+    "url": "http://github.com/JPLeopoldino"
+  },
+  {
+    "id": 1,
+    "name": "Linkedin",
+    "icon": "linkedin",
+    "url": "http://linkedin.com/JPLeopoldino"
+  },
+  {
+    "id": 2,
+    "name": "E-mail",
+    "icon": "mail",
+    "url": "mailto:leopoldinodev@gmail.com"
+  }
+]
